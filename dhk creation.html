@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHK Creation | Real Estate Photo Editing & Virtual Staging</title>
+    <meta name="description" content="Professional real estate photo editing, HDR blending, AI enhancement, floor plans, virtual staging. 24hr turnaround. $10/photo.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #1a5c5c;
+            --accent: #b8860b;
+            --dark: #2c3e50;
+            --light: #f8f5f0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--light);
+            color: var(--dark);
+        }
+
+      .navbar-brand img {
+            height: 80px;
+            width: auto;
+        }
+
+      .navbar-brand-text {
+            font-weight: 500;
+            color: var(--primary);
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+      .hero {
+            background: linear-gradient(135deg, #fff 0%, var(--light) 100%);
+            padding: 30px 0 80px;
+            border-bottom: 4px solid var(--primary);
+        }
+
+      .logo-hero {
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 50px;
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.1));
+        }
+
+      .tagline {
+            color: var(--accent);
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
+        }
+
+      .btn-accent {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+      .btn-accent:hover {
+            background: #9a7209;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(184,134,11,0.4);
+        }
+
+      .btn-outline-primary {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+      .btn-outline-primary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+      .service-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            height: 100%;
+        }
+      .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+        }
+      .service-header {
+            background: var(--primary);
+            color: white;
+            border-radius: 15px 15px 0 0;
+            padding: 20px;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+
+      .ba-label {
+            padding: 10px;
+            font-weight: 700;
+            color: white;
+            text-align: center;
+        }
+      .ba-before { background: var(--primary); }
+      .ba-after { background: var(--accent); }
+
+      .pricing-card {
+            background: var(--primary);
+            color: white;
+            border-radius: 20px;
+            padding: 50px 30px;
+        }
+      .price-display {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+      .contact-section {
+            background: var(--dark);
+            color: white;
+        }
+
+      .hdr-badge {
+            background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        /* COPYRIGHT SECTION */
+      .footer-main {
+            background: #1a1a1a;
+            color: rgba(255,255,255,0.8);
+            padding: 50px 0 30px;
+        }
+
+      .footer-bottom {
+            background: #0a0a0a;
+            color: rgba(255,255,255,0.6);
+            padding: 20px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+      .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: 0.3s;
+            margin: 0 15px;
+        }
+
+      .footer-links a:hover {
+            color: var(--accent);
+        }
+
+      .social-icons a {
+            color: rgba(255,255,255,0.7);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+      .social-icons a:hover {
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- LOGO IMGUR LINK YAHAN DAALO -->
+                <img src="D:\New folder\New folder (2)\New folder\Website\images\Navbar.png" alt="DHK Creation Logo" onerror="this.style.display='none'">
+                <span class="navbar-brand-text">DHK CREATION</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item ms-3">
+                        <a href="mailto:daheemhamzakhan7374@gmail.com?subject=FREE%20Trial%20Request" class="btn btn-accent">Free Trial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Logo -->
+    <section class="hero text-center">
+        <div class="container">
+            <!-- MAIN LOGO - IMGUR LINK YAHAN DAALO -->
+            <img src="D:\New folder\New folder (2)\New folder\Website\images\Navbar.png" alt="DHK Creation" class="logo-hero" onerror="this.style.display='none'">
+
+            <div class="tagline mb-4">REAL ESTATE PHOTO EDITING & FLOOR PLAN</div>
+            <h1 class="display-4 fw-light mb-3">OUR PORTFOLIO <span style="color: var(--accent); font-weight:700;">& SERVICES</span></h1>
+            <p class="lead mb-4 mx-auto" style="max-width: 700px;">
+                We transform standard property shots into magazine-quality visuals using <strong>HDR Blending</strong> 24-hour turnaround guaranteed + <strong>AI Enhancement</strong>. 2-hour turnaround guaranteed.
+            </p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="mailto:daheemhamzakhan7374@gmail.com?subject=FREE%20Trial%20-%20DHK%20Creation" class="btn btn-accent btn-lg">
+                    <i class="fas fa-gift me-2"></i>Get FREE Trial Photo
+                </a>
+                <a href="#portfolio" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-images me-2"></i>View Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Professional Photo Editing & AI Enhancement</h2>
+                <p class="text-muted fs-5">Everything you need to make your listings stand out and sell faster</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card">
+                        <div class="service-header text-center">
+                            <i class="fas fa-camera-retro me-2"></i>HDR PHOTO BLENDING <span class="hdr-badge">HOT</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <p>Professional HDR blending for perfect exposure in every shot. No more dark windows or blown-out highlights.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>3-5 Bracket HDR Merge</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Window Pull / View Enhancement</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Flash/Ambient Blending</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Color Cast Removal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+              
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card">
+                        <div class="service-header text-center">
+                            <i class="fas fa-couch me-2"></i>VIRTUAL STAGING
+                        </div>
+                        <div class="card-body p-4">
+                            <p>Transform empty rooms into beautifully furnished spaces that help buyers visualize.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Furniture Addition</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Wall Color Change</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Flooring Replacement</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Virtual Renovation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card">
+                        <div class="service-header text-center">
+                            <i class="fas fa-tree me-2"></i>GRASS & SKY ENHANCEMENT
+                        </div>
+                        <div class="card-body p-4">
+                            <p>Professional lawn color, texture editing, and dramatic sky replacements.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Grass Change / Green-Up</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Sky Replacement</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Twilight Conversion</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Landscape Enhancement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+               
+                    <div class="col-lg-4 col-md-6">
+                    <div class="card service-card">
+                        <div class="service-header text-center">
+                            <i class="fas fa-magic me-2"></i>AI ENHANCEMENT
+                        </div>
+                        <div class="card-body p-4">
+                            <p>AI-powered editing for next-level real estate photos.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Object Removal</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Day to Dusk AI</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Declutter & Clean</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Lighting Correction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE BEFORE/AFTER SLIDER PORTFOLIO -->
+    <section id="portfolio" class="py-5" style="background: #f8f5f0;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3" style="font-size: 2.5rem; color: #1a5c5c;">Before & After Showcase</h2>
+                <div style="width: 80px; height: 4px; background: #b8860b; margin: 0 auto 20px;"></div>
+                <p class="text-muted fs-5">Drag the slider to see the DHK Creation transformation</p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="portfolio-item">
+                        <div class="ba-container">
+                            <img src="D:\New folder\New folder (2)\New folder\Website\images\HDR Before.JPG" alt="Before HDR">
+                            <div class="ba-overlay">
+                                <img src="D:\New folder\New folder (2)\New folder\Website\images\HDR After.jpg" alt="After HDR">
+                            </div>
+                            <div class="ba-handle"></div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h5><i class="fas fa-camera-retro me-2" style="color: #b8860b;"></i>HDR Blending + Window Pull</h5>
+                            <p class="text-muted mb-0">3-Bracket HDR merge for perfect interior/exterior balance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="portfolio-item">
+                        <div class="ba-container">
+                            <img src="D:\New folder\New folder (2)\New folder\Website\images\Ext before.jpg" alt="Before Sky">
+                            <div class="ba-overlay">
+                                <img src="D:\New folder\New folder (2)\New folder\Website\images\ext After.jpg" alt="After Sky">
+                            </div>
+                            <div class="ba-handle"></div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h5><i class="fas fa-cloud-sun me-2" style="color: #b8860b;"></i>Sky Replacement + Grass Green-Up</h5>
+                            <p class="text-muted mb-0">Dramatic sky swap + lawn enhancement for curb appeal</p>
+                        </div>
+                    </div>
+                </div>
+      <div class="col-lg-6">
+                    <div class="portfolio-item">
+                        <div class="ba-container">
+                            <img src="D:\New folder\New folder (2)\New folder\Website\images\Removal Before.jpg" alt="Before Removal">
+                            <div class="ba-overlay">
+                                <img src="D:\New folder\New folder (2)\New folder\Website\images\Removal After.jpg" alt="After Removal">
+                            </div>
+                            <div class="ba-handle"></div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h5><i class="fas fa-Object Removal me-2" style="color: #b8860b;"></i>Object Removal, Clutter & Declutter</h5>
+                            <p class="text-muted mb-0">Dramatic Object Removal, Clutter</p>
+                        </div>
+                    </div>
+                </div>
+
+          <div class="col-lg-6">
+                    <div class="portfolio-item">
+                        <div class="ba-container">
+                            <img src="D:\New folder\New folder (2)\New folder\Website\images\Day to Night Before.jpg" alt="Before Twilight">
+                            <div class="ba-overlay">
+                                <img src="D:\New folder\New folder (2)\New folder\Website\images\Day to Night After.png" alt="After Twilight">
+                            </div>
+                            <div class="ba-handle"></div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h5><i class="fas fa-moon me-2" style="color: #b8860b;"></i>Day to Dusk Twilight Conversion</h5>
+                            <p class="text-muted mb-0">Magazine-quality dusk shots that sell 40% faster</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="https://drive.google.com/drive/folders/192kv7CKXx75ibAC9zmoI1o3zpQuRihiE" target="_blank" class="btn btn-lg" style="background: #1a5c5c; color: white; padding: 15px 40px; border-radius: 50px; font-weight: 600;">
+                    <i class="fab fa-google-drive me-2"></i>View 50+ Full Projects on Drive
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE CSS + JQUERY SLIDER -->
+    <style>
+    .portfolio-item {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: 0.4s;
+        }
+    .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+    .ba-container {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            cursor: ew-resize;
+        }
+    .ba-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    .ba-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+        }
+    .ba-overlay img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            object-fit: cover;
+        }
+    .ba-handle {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: white;
+            cursor: ew-resize;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            transform: translateX(-50%);
+        }
+    .ba-handle::before {
+            content: '◄ ►';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #b8860b;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+    .ba-handle::after {
+            content: 'DRAG';
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(26,92,92,0.9);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+    .portfolio-info {
+            padding: 25px;
+        }
+    .portfolio-info h5 {
+            color: #1a5c5c;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+    </style>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-5">
+        <div class="container">
+            <div class="pricing-card text-center mx-auto" style="max-width: 700px;">
+                <h2 class="mb-3">Simple, Transparent Pricing</h2>
+                <p class="mb-4" style="opacity: 0.9;">No subscriptions. No hidden fees. Pay per photo.</p>
+                <div class="price-display mb-4">$8<span class="fs-3">/photo</span></div>
+                <ul class="list-unstyled d-inline-block text-start mb-4">
+                    <li class="mb-2"><i class="fas fa-star me-2" style="color: var(--accent);"></i>HDR Blending Included</li>
+                    <li class="mb-2"><i class="fas fa-star me-2" style="color: var(--accent);"></i>24-Hour Turnaround</li>
+                    <li class="mb-2"><i class="fas fa-star me-2" style="color: var(--accent);"></i>Unlimited Revisions</li>
+                    <li class="mb-2"><i class="fas fa-star me-2" style="color: var(--accent);"></i>All Edit Types Included</li>
+                    <li class="mb-2"><i class="fas fa-star me-2" style="color: var(--accent);"></i>First Photo FREE - No Credit Card</li>
+                </ul>
+                <div>
+                    <a href="mailto:daheemhamzakhan7374@gmail.com?subject=FREE%20Trial%20Request" class="btn btn-accent btn-lg">
+                        <i class="fas fa-rocket me-2"></i>Start FREE Trial Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Let's Work Together</h2>
+                <p class="fs-5" style="opacity: 0.8;">Ready to make your listings sell 40% faster?</p>
+            </div>
+
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <i class="fas fa-envelope fa-3x mb-3" style="color: var(--accent);"></i>
+                    <h4>Email</h4>
+                    <a href="mailto:daheemhamzakhan7374@gmail.com" class="text-white text-decoration-none">daheemhamzakhan7374@gmail.com</a>
+                </div>
+                <div class="col-md-4">
+                    <i class="fab fa-whatsapp fa-3x mb-3" style="color: var(--accent);"></i>
+                    <h4>WhatsApp</h4>
+                    <a href="https://wa.me/923088837374" class="text-white text-decoration-none">0308-8837374</a>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-map-marker-alt fa-3x mb-3" style="color: var(--accent);"></i>
+                    <h4>Location</h4>
+                    <p>Lahore, Pakistan<br>Serving Agents Worldwide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER WITH COPYRIGHT -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-3" style="color: var(--accent);">DHK CREATION</h5>
+                    <p>Professional Real Estate Photo Editing, HDR Blending, Virtual Staging & Floor Plans. 24-hour turnaround guaranteed.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://wa.me/923088837374" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:daheemhamzakhan7374@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://drive.google.com/drive/folders/192kv7CKXx75ibAC9zmoI1o3zpQuRihiE" target="_blank"><i class="fab fa-google-drive"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="mb-3" style="color: var(--accent);">Services</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#services">HDR Blending</a></li>
+                        <li class="mb-2"><a href="#services">Virtual Staging</a></li>
+                        <li class="mb-2"><a href="#services">Floor Plans</a></li>
+                        <li class="mb-2"><a href="#services">Sky Replacement</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="mb-3" style="color: var(--accent);">Company</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#portfolio">Portfolio</a></li>
+                        <li class="mb-2"><a href="#pricing">Pricing</a></li>
+                        <li class="mb-2"><a href="mailto:daheemhamzakhan7374@gmail.com">Contact</a></li>
+                        <li class="mb-2"><a href="mailto:daheemhamzakhan7374@gmail.com?subject=FREE%20Trial">Free Trial</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="mb-3" style="color: var(--accent);">Get Started Today</h6>
+                    <p>First photo FREE - No credit card required</p>
+                    <a href="mailto:daheemhamzakhan7374@gmail.com?subject=FREE%20Trial%20Request" class="btn btn-accent">
+                        <i class="fas fa-gift me-2"></i>Claim Free Trial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- COPYRIGHT BOTTOM BAR -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2026 DHK Creation. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="mailto:daheemhamzakhan7374@gmail.com">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS + jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JQUERY SLIDER SCRIPT + FIXED EMAIL BEHAVIOR -->
+    <script>
+        $(document).ready(function() {
+            // Before/After Slider
+            $('.ba-container').each(function() {
+                const container = $(this);
+                const overlay = container.find('.ba-overlay');
+                const handle = container.find('.ba-handle');
+                let isDragging = false;
+
+                function updateSlider(x) {
+                    const rect = container[0].getBoundingClientRect();
+                    let pos = (x - rect.left) / rect.width;
+                    pos = Math.max(0, Math.min(1, pos));
+
+                    overlay.css('width', (pos * 100) + '%');
+                    handle.css('left', (pos * 100) + '%');
+                }
+
+                container.on('mousedown touchstart', function(e) {
+                    isDragging = true;
+                    e.preventDefault();
+                });
+
+                $(document).on('mousemove touchmove', function(e) {
+                    if (!isDragging) return;
+                    const x = e.pageX || e.originalEvent.touches[0].pageX;
+                    updateSlider(x);
+                });
+
+                $(document).on('mouseup touchend', function() {
+                    isDragging = false;
+                });
+
+                // Auto animate on load
+                setTimeout(() => {
+                    overlay.css('transition', 'width 1.5s ease');
+                    handle.css('transition', 'left 1.5s ease');
+                    overlay.css('width', '75%');
+                    handle.css('left', '75%');
+                }, 500);
+            });
+
+            // Smooth scroll for anchor links
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if(target.length) {
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 70
+                    }, 800);
+                }
+            });
+
+            // Navbar shadow on scroll
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 50) {
+                    $('.navbar').addClass('shadow-lg');
+                } else {
+                    $('.navbar').removeClass('shadow-lg');
+                }
+            });
+
+            // FIXED: Mailto links ab direct email kholenge, copy nahi karenge
+            // Copy email sirf footer mein click karne pe
+            $('.footer-bottom a[href^="mailto"]').on('click', function(e) {
+                e.preventDefault();
+                var email = 'daheemhamzakhan7374@gmail.com';
+                navigator.clipboard.writeText(email);
+                var toastHTML = '<div class="toast align-items-center text-white bg-success border-0 position-fixed bottom-0 end-0 m-3" role="alert"><div class="d-flex"><div class="toast-body"><i class="fas fa-check me-2"></i>Email copied!</div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div>';
+                $('body').append(toastHTML);
+                var toastEl = $('.toast').last();
+                var toast = new bootstrap.Toast(toastEl);
+                toast.show();
+            });
+
+            console.log('DHK Creation Website - Email Fixed 🚀');
+        });
+    </script>
+</body>
+</html>
